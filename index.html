@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=`, initial-scale=1.0"> -->
+  <title>HomePage</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <!-- Google Fonts (Optimized: Avoid Duplicates) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Oswald:wght@200..700&family=Montserrat:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Animation & UI Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css">
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+  <!-- JavaScript Libraries (jQuery First) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+
+  <!-- GSAP & Animation Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Custom JavaScript -->
+  <script src="assets/js/index.js" defer></script>
+    
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+        <div class="menu">
+            <button class="menu-button" id="menu-button">☰ Menu</button>
+            <div class="menu-content" id="menuContent">
+                <a href="vouchers.html"><h4>Vouchers</h4></a>   
+                <a href="profile-page.html"><h4>Profile</h4></a>
+                <a href="login.html"><h4>Login</h4></a>
+                <a href="contact.html"><h4>Contact</h4></a>
+            </div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"><h4>Home</h4></a></li>
+            <li><a href="merch.html"><h4>Merch</h4></a></li>
+            <li><a href="upcoming-movies.html"><h4>Upcoming Movies</h4></a></li>
+            <li><a href="actors.html"><h4>Actors</h4></a></li>
+            <li><a href="oscar-movies.html"><h4>Oscar Movies</h4></a></li>
+            <li><a href="my-tickets.html"><h4>My Tickets</h4></a></li>
+            <li><a href="special-events.html"><h4>Special Events</h4></a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="searchbar" id="searchbar" placeholder="Type here..." />
+            <button class="search-btn">Search🔍</button>
+        </div>
+        <img class="logo" src="assets/images/index/logo4.png" alt="no image">
+    </nav>
+    <div class="separator pattern-checks-sm"></div>
+
+    
+    <br>
+
+
+
+  <div class="main-image">
+
+
+    <div class="container-fluid px-0 carousel-container"> <!-- Removes padding on mobile -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <!-- Modalul pt DEADPOOL-->
+          <div class="modal fade" id="exempluModal1" tabindex="-1" aria-labelledby="exempluModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content custom-modal">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exempluModalLabel">🎉 Movie Description</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Închide"></button>
+                </div>
+                <div class="modal-body">
+                  <strong>Deadpool and Wolverine (2024)</strong> 
+                  <br><br>
+                  <p> Deadpool and Wolverine team up in an action-packed, R-rated adventure filled with
+                    brutal fights, hilarious banter, and unexpected surprises. 
+                    <br>
+                    When a mysterious organization threatens reality, the wisecracking mercenary and the gruff mutant must join forces—whether they like it or not.
+                    <br><br>
+                    <i>Chaos, comedy, and carnage await in this epic Marvel showdown! </i><br><br>
+                    <strong>Genre:</strong> Action | Comedy | Superhero <br>
+                    <strong>Duration:</strong> 2h 7min <br>
+                    <strong>Release Date:</strong> July 26, 2024 </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trailer DEADPOOL -->
+          <div class="modal fade modal-xl" id="deadpooltrailer" tabindex="-1" aria-labelledby="exempluModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered"> <!-- Centered modal -->
+          <div class="modal-content custom-modal">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exempluModalLabel">🎥 Movie Trailer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          
+          <strong>Deadpool and Wolverine (2024)</strong> 
+          <br><br>
+          <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/73_1biulkYk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          
+
+
+          <!-- Carousel DEADPOOL -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/index/deadpool4k.jpeg" class="d-block w-100 h-100" alt="...">
+
+          <!-- Title -->
+              <h2 class="responsive-title position-absolute bottom-0 start-0">DEADPOOL AND WOLVERINE</h2>
+
+          <!-- Butonul pentru deschiderea modalului -->
+              <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold special-text-button" data-bs-toggle="modal" data-bs-target="#exempluModal1" onclick="openModal(event)"> More Details </button>
+              <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#deadpooltrailer" onclick="openModal(event)"> Trailer</button>
+                
+
+
+          <!-- stars -->
+          <div class="stars">
+            <i class="fa-solid fa-star star1 inactive"></i>
+            <i class="fa-solid fa-star star2 inactive"></i>
+            <i class="fa-solid fa-star star3 inactive"></i>
+            <i class="fa-solid fa-star star4 inactive"></i>
+            <i class="fa-solid fa-star star5 inactive"></i>
+          </div>
+          </div>
+        
+
+
+
+
+
+          <!-- Modalul pt ALIEN -->
+<div class="modal fade" id="alienDescription" tabindex="-1" aria-labelledby="alienModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="alienModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Alien: Romulus (2024)</strong>
+        <br><br>
+        <p>In deep space, a routine mission turns into a nightmare when the crew of a distant spacecraft encounters a hostile extraterrestrial lifeform. 
+          <br>
+          As fear and paranoia spread, survival becomes a desperate priority.
+          <br><br>
+          <i>The horror classic returns with a terrifying reimagining of isolation, suspense, and survival.</i><br><br>
+          <strong>Genre:</strong> Sci-Fi | Horror | Thriller <br>
+          <strong>Duration:</strong> 1h 55min <br>
+          <strong>Release Date:</strong> August 16, 2024
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trailer ALIEN -->
+<div class="modal fade modal-xl" id="alienTrailer" tabindex="-1" aria-labelledby="alienTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="alienTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Alien: Romulus (2024)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/OzY2r2JXsDM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+                  <div class="carousel-item">
+                    <img src="assets/images/index/alien4k.jpeg" class="d-block w-100" alt="...">
+                    <h2 class="responsive-title position-absolute bottom-0 start-0">ALIEN: ROMULUS</h2>
+
+                    <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#alienDescription" onclick="openModal(event)"> More Details </button>
+                    <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#alienTrailer" onclick="openModal(event)"> Trailer</button>
+                
+
+                    <!-- Stars -->
+                    <div class="stars">
+                      <i class="fa-solid fa-star star1 inactive"></i>
+                      <i class="fa-solid fa-star star2 inactive"></i>
+                      <i class="fa-solid fa-star star3 inactive"></i>
+                      <i class="fa-solid fa-star star4 inactive"></i>
+                      <i class="fa-solid fa-star star5 inactive"></i>
+                    </div>
+                  </div>
+
+
+      
+
+          <!-- Modalul pt BAD BOYS -->
+<div class="modal fade" id="badboysDescription" tabindex="-1" aria-labelledby="badboysModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="badboysModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Bad Boys: Ride or Die (2024)</strong>
+        <br><br>
+        <p>Detectives Mike Lowrey and Marcus Burnett return for one final mission as they uncover corruption within the Miami PD.
+          <br>
+          With the city turned against them, they go rogue to clear their names and deliver justice.
+          <br><br>
+          <i>Explosions, laughter, and classic buddy cop chaos are back—badder than ever.</i><br><br>
+          <strong>Genre:</strong> Action | Comedy | Crime <br>
+          <strong>Duration:</strong> 2h 3min <br>
+          <strong>Release Date:</strong> June 7, 2024
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modalul pt Trailer BAD BOYS -->
+<div class="modal fade modal-xl" id="badboysTrailer" tabindex="-1" aria-labelledby="badboysTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="badboysTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Bad Boys: Ride or Die (2024)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/hRFY_Fesa9Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <div class="carousel-item">
+                  <img src="assets/images/index/badboys4k.jpeg" class="d-block w-100" alt="...">
+                  <h2 class="responsive-title position-absolute bottom-0 start-0">BAD BOYS: RIDE OR DIE</h2>
+
+                  <!-- Buton More Details -->
+                  <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#badboysDescription" onclick="openModal(event)"> More Details </button>
+                  <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#badboysTrailer" onclick="openModal(event)"> Trailer</button>
+          
+                  <!-- Stele -->
+                  <div class="stars">
+                    <i class="fa-solid fa-star star1 inactive"></i>
+                    <i class="fa-solid fa-star star2 inactive"></i>
+                    <i class="fa-solid fa-star star3 inactive"></i>
+                    <i class="fa-solid fa-star star4 inactive"></i>
+                    <i class="fa-solid fa-star star5 inactive"></i>
+                  </div>
+                </div>
+
+
+
+
+          <!-- Modalul pt THE SINNERS -->
+<div class="modal fade" id="sinnersDescription" tabindex="-1" aria-labelledby="sinnersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sinnersModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>The Sinners</strong>
+        <br><br>
+        <p>
+          A group of rebellious teenage girls forms a secret cult, but their dark games spiral into a deadly mystery when one of them vanishes.
+          <br>
+          As secrets unravel, the line between sinner and victim begins to blur.
+          <br><br>
+          <i>A chilling tale of manipulation, guilt, and vengeance in a small town wrapped in scandal.</i><br><br>
+          <strong>Genre:</strong> Thriller | Mystery | Drama <br>
+          <strong>Duration:</strong> 1h 36min <br>
+          <strong>Release Date:</strong> Already released (2021)
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modalul pt Trailer THE SINNERS -->
+<div class="modal fade modal-xl" id="sinnersTrailer" tabindex="-1" aria-labelledby="sinnersTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sinnersTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>The Sinners (2021)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/7joulECTx_U"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+              <div class="carousel-item">
+                <img src="assets/images/index/sinners.jpg" class="d-block w-100" alt="...">
+                <h2 class="responsive-title position-absolute bottom-0 start-0">THE SINNERS</h2>
+
+                <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#sinnersDescription" onclick="openModal(event)"> More Details </button>
+                <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#sinnersTrailer" onclick="openModal(event)"> Trailer</button>
+          
+
+                <!-- Stele -->
+                <div class="stars">
+                  <i class="fa-solid fa-star star1 inactive"></i>
+                  <i class="fa-solid fa-star star2 inactive"></i>
+                  <i class="fa-solid fa-star star3 inactive"></i>
+                  <i class="fa-solid fa-star star4 inactive"></i>
+                  <i class="fa-solid fa-star star5 inactive"></i>
+                </div>
+              </div>
+
+              <!-- Modalul Descriere THUNDERBOLTS -->
+<div class="modal fade" id="thunderboltsDescription" tabindex="-1" aria-labelledby="thunderboltsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thunderboltsModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Thunderbolts (2025)</strong>
+        <br><br>
+        <p>
+          A team of anti-heroes and reformed villains is assembled by the government for a covert mission too risky for the Avengers.
+          <br>
+          But not everything is what it seems, and loyalty is put to the test.
+          <br><br>
+          <i>Dark humor, explosive action, and Marvel’s most unpredictable team yet.</i><br><br>
+          <strong>Genre:</strong> Superhero | Action | Sci-Fi <br>
+          <strong>Duration:</strong> 2h 10min <br>
+          <strong>Release Date:</strong> May 2, 2025
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modalul Trailer THUNDERBOLTS -->
+<div class="modal fade modal-xl" id="thunderboltsTrailer" tabindex="-1" aria-labelledby="thunderboltsTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thunderboltsTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Thunderbolts (2025)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/-sAOWhvheK8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="carousel-item">
+          <img src="assets\images\index\thunderbolts.jpg" class="d-block w-100" alt="...">
+          <h2 class="responsive-title position-absolute bottom-0 start-0">THUNDERBOLTS</h2>
+
+      
+          <!-- Buton care deschide modalul --> 
+          <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#thunderboltsDescription" onclick="openModal(event)"> More Details </button>
+          <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#thunderboltsTrailer" onclick="openModal(event)"> Trailer</button>
+      
+
+          <!-- stars -->
+          <div class="stars">
+            <i class="fa-solid fa-star star1 inactive"></i>
+            <i class="fa-solid fa-star star2 inactive"></i>
+            <i class="fa-solid fa-star star3 inactive"></i>
+            <i class="fa-solid fa-star star4 inactive"></i>
+            <i class="fa-solid fa-star star5 inactive"></i>
+          </div>
+        </div>
+
+
+        <!-- Modalul Descriere CAPTAIN AMERICA -->
+<div class="modal fade" id="captainDescription" tabindex="-1" aria-labelledby="captainModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="captainModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Captain America: Brave New World (2025)</strong>
+        <br><br>
+        <p>
+          Sam Wilson steps into the mantle of Captain America in a world grappling with uncertainty and division.
+          <br>
+          As new threats rise, he must redefine what it means to be a symbol of hope.
+          <br><br>
+          <i>A powerful new chapter in the legacy of the shield—built on justice, unity, and courage.</i><br><br>
+          <strong>Genre:</strong> Superhero | Action | Drama <br>
+          <strong>Duration:</strong> 2h 12min <br>
+          <strong>Release Date:</strong> February 14, 2025
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modalul Trailer CAPTAIN AMERICA -->
+<div class="modal fade modal-xl" id="captainTrailer" tabindex="-1" aria-labelledby="captainTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="captainTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Captain America: Brave New World (2025)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/FEa9pPqGhPY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="carousel-item">
+          <img src="assets\images\index\captainamerica.jpg" class="d-block w-100" alt="...">
+          <h2 class="responsive-title position-absolute bottom-0 start-0">CAPTAIN AMERICA: BRAVE NEW WORLD</h2>
+
+                <!-- Buton care deschide modalul --> 
+                <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#captainDescription" onclick="openModal(event)"> More Details </button>
+                <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#captainTrailer" onclick="openModal(event)"> Trailer</button>
+          
+
+          <!-- stars -->
+          <div class="stars">
+            <i class="fa-solid fa-star star1 inactive"></i>
+            <i class="fa-solid fa-star star2 inactive"></i>
+            <i class="fa-solid fa-star star3 inactive"></i>
+            <i class="fa-solid fa-star star4 inactive"></i>
+            <i class="fa-solid fa-star star5 inactive"></i>
+          </div>
+        </div>
+
+
+
+        <!-- Modalul Descriere NOSFERATU -->
+<div class="modal fade" id="nosferatuDescription" tabindex="-1" aria-labelledby="nosferatuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nosferatuModalLabel">🎉 Movie Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Nosferatu (2024)</strong>
+        <br><br>
+        <p>
+          In a haunting gothic revival, a young woman becomes the obsession of a terrifying vampire who stalks the night in 19th century Europe.
+          <br>
+          As shadows grow, the horror unfolds in a tale of madness, bloodlust, and dread.
+          <br><br>
+          <i>Robert Eggers’ chilling reimagining of the silent classic is a mesmerizing descent into darkness.</i><br><br>
+          <strong>Genre:</strong> Horror | Gothic | Fantasy <br>
+          <strong>Duration:</strong> 1h 58min <br>
+          <strong>Release Date:</strong> December 25, 2024
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modalul Trailer NOSFERATU -->
+<div class="modal fade modal-xl" id="nosferatuTrailer" tabindex="-1" aria-labelledby="nosferatuTrailerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nosferatuTrailerLabel">🎥 Movie Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Nosferatu (2024)</strong>
+        <br><br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/nulvWqYUM8k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="carousel-item">
+          <img src="assets\images\index\nosferatu.jpg" class="d-block w-100" alt="...">
+          <h2 class="responsive-title position-absolute bottom-0 start-0">NOSFERATU</h2>
+
+
+          <!-- Buton care deschide modalul --> 
+              <button type="button" class="btn btn-lg custom-color-btn btn-primary open-modal-btn custom-position-btn rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#nosferatuDescription" onclick="openModal(event)"> More Details </button>
+              <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#nosferatuTrailer" onclick="openModal(event)"> Trailer</button>
+          
+          
+
+          <!-- stars -->
+          <div class="stars">
+            <i class="fa-solid fa-star star1 inactive"></i>
+            <i class="fa-solid fa-star star2 inactive"></i>
+            <i class="fa-solid fa-star star3 inactive"></i>
+            <i class="fa-solid fa-star star4 inactive"></i>
+            <i class="fa-solid fa-star star5 inactive"></i>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+  
+
+  <div class="main-content">
+    <p class="motto">"Warning: This Site May Cause Extreme Binge-Watching! 🍿😆"</p>
+
+    <br>
+    <br>
+
+    <div class="parent-container">
+    <div class="aboutus">
+      <h1 class="title-aboutus">About Us – MovieRadar ✨</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h2>Welcome to MovieRadar- your ultimate destination for discovering, exploring, and keeping track of the best
+        movies and TV shows! </h2>
+      <br>
+      <h2>At MovieRadar, we believe that great entertainment should be easy to find and even easier to enjoy. Our
+        platform is designed to help movie enthusiasts stay updated with the latest releases, watch trailers, read
+        reviews, and build personalized watchlists.</h2>
+
+      <h2 class="centertext">Whether you're looking for blockbuster hits, hidden gems, or upcoming releases, we've got
+        you covered. </h2>
+
+      <h2>With a sleek and user-friendly interface, MovieRadar makes it simple to navigate through genres, find
+        recommendations, and explore trending films. We also provide insightful ratings, cast details, and engaging
+        content to enhance your movie-watching experience.
+        <br>
+        <br>
+        Join us and never miss a must-watch film again—because at MovieRadar, <b>cinema is more than just entertainment,
+          it’s an experience! 🤙</b>
+      </h2>
+
+    </div>
+
+    <br>
+    <br>
+    
+    <p class="motto">"Highly Addictive Content Ahead — Proceed with Snacks! 🍫🥤"</p>
+
+   <div class="movie-generator text-center container py-5">
+  <h1 class="title-aboutus mb-4">Still confused? 🤔</h1>
+  <h2 class="lead mb-5">Try our MovieGenerator! Click randomly on one of the boxes and we will give you some suggestions.</h2>
+
+  <div class="generator-boxes d-flex justify-content-center flex-wrap gap-3 mb-5">
+    <div class="movie-box" onclick="generateRandomMovie(0)"></div>
+    <div class="movie-box" onclick="generateRandomMovie(1)"></div>
+    <div class="movie-box" onclick="generateRandomMovie(2)"></div>
+    <div class="movie-box" onclick="generateRandomMovie(3)"></div>
+  </div>
+
+  <h2 class="lead fst-italic">Not the right pick? No worries! There’s a blockbuster waiting for you!</h2>
+</div>
+
+
+    <div id="movieSuggestionModal" class="custom-suggestion-modal" style="display:none;">
+      <p id="suggestionText"></p>
+    </div>
+    
+    <p class="motto"> "Here’s Your Ticket to Escaping Reality in 3… 2… 1… 🎟️"</p>
+   
+
+    <br>
+    <br>
+    <br>
+  </div>
+  </div>
+
+  <div class="separator pattern-checks-sm"></div>
+<footer class="w-100 footer bg-body-tertiary text-center text-lg-start">
+	<div class="row text-center justify-content-center py-4">
+		<!-- Logo & Socials -->
+		<div class="col-lg-2 col-md-6 mb-md-0">
+			<a href="index.html">
+				<img class="mt-2" id="logo-footer" src="assets/images/logo-dark.png" alt="MovieRadar Logo">
+			</a>
+			<div class="socials mt-3">
+				<p id="follow">Follow us on</p>
+				<a href="https://x.com/bosro?mx=2"><i class="mx-2 fa-brands fa-twitter"></i></a>
+				<a href="https://www.instagram.com/bosromania"><i class="mx-2 fa-brands fa-instagram"></i></a>
+				<a href="https://www.facebook.com/bosromania"><i class="mx-2 fa-brands fa-facebook"></i></a>
+				<a href="https://www.tiktok.com/@bosromania"><i class="mx-2 fa-brands fa-tiktok"></i></a>
+			</div>
+		</div>
+
+		<!-- Company Links -->
+		<div class="mt-4 column col-lg-2 col-md-6 mb-md-0">
+			<h5 class="text-uppercase">Company</h5>
+			<ul class="mt-3 list-unstyled">
+				<li><a href="#!">About us</a></li>
+				<li><a href="#!">Careers</a></li>
+				<li><a href="#!">Features</a></li>
+				<li><a href="#!">Terms & Privacy</a></li>
+			</ul>
+		</div>
+
+		<!-- Help Links -->
+		<div class="mt-4 column col-lg-2 col-md-6 mb-md-0">
+			<h5 class="text-uppercase">Help</h5>
+			<ul class="mt-3 list-unstyled">
+				<li><a href="#!">Track my tickets</a></li>
+				<li><a href="#!">Community Support</a></li>
+				<li><a href="#!">Community Guidelines</a></li>
+				<li><a href="#!">Help</a></li>
+			</ul>
+		</div>
+
+		<!-- Contact -->
+		<div class="mt-4 column col-lg-2 col-md-6 mb-md-0">
+			<a href="contact.html" class="link-offset-2 link-underline link-underline-opacity-0">
+				<h5 class="text-uppercase">Contact us</h5>
+			</a>
+			<ul class="mt-3 list-unstyled">
+				<li><i class="fa-solid fa-square-envelope"></i> @movieradar.com</li>
+				<li><i class="fa-solid fa-phone"></i> +40 760 093 722</li>
+				<li><i class="fa-solid fa-location-dot"></i> Unirii boulevard 4</li>
+			</ul>
+		</div>
+
+		<!-- Description -->
+		<div class="mt-4 column-text text-center col-lg-3 col-md-6 mb-md-0">
+			<ul class="text list-unstyled">
+				<li>Movieradar is a suitable website that covers all you need: listing, rating, review, posts preview upcoming movies.</li>
+				<li><hr></li>
+				<li>Movieradar's unique value is to be at the same time very easy to use and fully integrated.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Footer Bottom -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2025 Copyright:
+		<a class="linkfooter text-dark" href="#">www.movieradar.com</a>
+	</div>
+</footer>
+
+    
+</body>
+</html>
