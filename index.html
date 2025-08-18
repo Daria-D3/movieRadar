@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=`, initial-scale=1.0"> -->
   <title>HomePage</title>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/index.css">
 
-  <!-- Google Fonts (Optimized: Avoid Duplicates) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -35,7 +35,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" defer></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 
   <!-- Fancybox -->
@@ -172,7 +171,7 @@
 
 
           <!-- stars -->
-          <div class="stars">
+          <div class="stars" data-movie="Deadpool and Wolverine (2024)">
             <i class="fa-solid fa-star star1 inactive"></i>
             <i class="fa-solid fa-star star2 inactive"></i>
             <i class="fa-solid fa-star star3 inactive"></i>
@@ -250,7 +249,7 @@
                 
 
                     <!-- Stars -->
-                    <div class="stars">
+                    <div class="stars" data-movie="Alien: Romulus (2024)">
                       <i class="fa-solid fa-star star1 inactive"></i>
                       <i class="fa-solid fa-star star2 inactive"></i>
                       <i class="fa-solid fa-star star3 inactive"></i>
@@ -325,7 +324,7 @@
                   <button type="button" class="btn btn-lg custom-color-btn-lala btn-primary open-modal-btn custom-position-btn-lala rounded-pill fw-bold " data-bs-toggle="modal" data-bs-target="#badboysTrailer" onclick="openModal(event)"> Trailer</button>
           
                   <!-- Stele -->
-                  <div class="stars">
+                  <div class="stars" data-movie="Bad Boys: Ride or Die (2024)">
                     <i class="fa-solid fa-star star1 inactive"></i>
                     <i class="fa-solid fa-star star2 inactive"></i>
                     <i class="fa-solid fa-star star3 inactive"></i>
@@ -401,7 +400,7 @@
           
 
                 <!-- Stele -->
-                <div class="stars">
+                <div class="stars" data-movie="The Sinners (2021)">
                   <i class="fa-solid fa-star star1 inactive"></i>
                   <i class="fa-solid fa-star star2 inactive"></i>
                   <i class="fa-solid fa-star star3 inactive"></i>
@@ -478,7 +477,7 @@
       
 
           <!-- stars -->
-          <div class="stars">
+          <div class="stars" data-movie="Thunderbolts (2025)">
             <i class="fa-solid fa-star star1 inactive"></i>
             <i class="fa-solid fa-star star2 inactive"></i>
             <i class="fa-solid fa-star star3 inactive"></i>
@@ -553,7 +552,7 @@
           
 
           <!-- stars -->
-          <div class="stars">
+          <div class="stars" data-movie="Captain America: Brave New World (2025)">
             <i class="fa-solid fa-star star1 inactive"></i>
             <i class="fa-solid fa-star star2 inactive"></i>
             <i class="fa-solid fa-star star3 inactive"></i>
@@ -631,7 +630,7 @@
           
 
           <!-- stars -->
-          <div class="stars">
+          <div class="stars" data-movie="Nosferatu (2024)">
             <i class="fa-solid fa-star star1 inactive"></i>
             <i class="fa-solid fa-star star2 inactive"></i>
             <i class="fa-solid fa-star star3 inactive"></i>
@@ -697,7 +696,6 @@
     </div>
 
     <br>
-    <br>
     
     <p class="motto">"Highly Addictive Content Ahead — Proceed with Snacks! 🍫🥤"</p>
 
@@ -728,6 +726,21 @@
     <br>
   </div>
   </div>
+
+  <!-- Rating Modal -->
+<div class="modal fade" id="ratingModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title">Rating Submitted ✨</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="ratingModalBody">
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="separator pattern-checks-sm"></div>
 <footer class="w-100 footer bg-body-tertiary text-center text-lg-start">
